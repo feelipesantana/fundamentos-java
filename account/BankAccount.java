@@ -2,9 +2,30 @@
 
 public class BankAccount{
 
-  String number;
-  String title;
-  double saldo;
+  private String number;
+  private String title;
+  private double saldo;
+
+  public BankAccount(){
+    this.saldo = 100;
+  }
+
+  public void setNumber(String value){
+    this.number = value; 
+  }
+  public void setTitle(String value){
+    this.title = value;
+  }
+  // public void setSaldo(double value){
+  //   this.saldo = value;
+  // }
+  
+  public String getTitle(){
+    return this.title;  
+  }
+  public double getSaldo(){
+    return this.saldo;  
+  }
 
   void deposit(double value){
     if(value > 0){
